@@ -11,8 +11,8 @@
 .navbar {
   position: relative;
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
-  margin-bottom: $navbar-margin-bottom;
-  border: 1px solid transparent;
+  // margin-bottom: $navbar-margin-bottom;
+  // border: 1px solid transparent;
 
   // Prevent floats from breaking the navbar
   @include clearfix;
@@ -163,9 +163,11 @@
 .navbar-brand {
   float: left;
   padding: $navbar-padding-vertical $navbar-padding-horizontal;
-  font-size: $font-size-large;
+  font-size: $font-size-base;
   line-height: $line-height-computed;
   height: $navbar-height;
+  font-family: 'montserratbold';
+  text-transform: uppercase;
 
   &:hover,
   &:focus {
@@ -235,7 +237,12 @@
   > li > a {
     padding-top:    10px;
     padding-bottom: 10px;
-    line-height: $line-height-computed;
+    line-height: $line-height-computed - $navbar-default-link-border-width;
+    font-size: $navbar-default-link-font-size;
+    font-family: $navbar-default-link-font-family;
+    border-top: $navbar-default-link-border-width solid transparent;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (max-width: $grid-float-breakpoint-max) {
@@ -269,6 +276,8 @@
 
     > li {
       float: left;
+      padding-left: $navbar-default-li-padding;
+      padding-right: $navbar-default-li-padding;
       > a {
         padding-top:    $navbar-padding-vertical;
         padding-bottom: $navbar-padding-vertical;
@@ -419,6 +428,7 @@
       &:focus {
         color: $navbar-default-link-hover-color;
         background-color: $navbar-default-link-hover-bg;
+        border-color: $navbar-default-link-border-color;
       }
     }
     > .active > a {
@@ -427,6 +437,7 @@
       &:focus {
         color: $navbar-default-link-active-color;
         background-color: $navbar-default-link-active-bg;
+        border-color: $navbar-default-link-border-color;
       }
     }
     > .disabled > a {
