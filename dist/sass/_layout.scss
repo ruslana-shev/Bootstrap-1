@@ -83,6 +83,7 @@
 		margin-top: 30px;
 		.title{
 			font-size: 16px;
+			font-family: 'montserratregular';
 			color: $gray-dark;
 			padding-bottom: 16px
 		}
@@ -95,6 +96,7 @@
 		.country{
 			font-size: 12px;
 			color: $gray-dark;
+			font-family: 'montserratregular';
 			display: flex;
     		align-items: center;
 			&::before{
@@ -113,6 +115,7 @@
 			}
 			dt{
 				color: $gray-dark;
+				font-family: 'montserratregular';
 			}
 			dd{
 				font-size: 12px;

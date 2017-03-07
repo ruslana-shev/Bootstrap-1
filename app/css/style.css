@@ -1170,7 +1170,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
+  font-family: "montserratregular";
   font-weight: 500;
   line-height: 1.1;
   color: inherit; }
@@ -5731,7 +5731,7 @@ button.close {
     color: #150c31;
     margin-bottom: 26px; }
   .carousel-caption p {
-    margin-bottom: 16px; }
+    margin-bottom: 44px; }
 
 @media screen and (min-width: 768px) {
   .carousel-control .glyphicon-chevron-left,
@@ -6173,6 +6173,7 @@ button {
     margin-top: 30px; }
     .events-wrap .event-item-desq .title {
       font-size: 16px;
+      font-family: 'montserratregular';
       color: #150c31;
       padding-bottom: 16px; }
     .events-wrap .event-item-desq p {
@@ -6181,6 +6182,7 @@ button {
   .events-wrap .event-item-location .country {
     font-size: 12px;
     color: #150c31;
+    font-family: 'montserratregular';
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -6201,7 +6203,8 @@ button {
     .events-wrap .event-item-location dl + dl {
       padding-left: 26px; }
     .events-wrap .event-item-location dl dt {
-      color: #150c31; }
+      color: #150c31;
+      font-family: 'montserratregular'; }
     .events-wrap .event-item-location dl dd {
       font-size: 12px; }
 
