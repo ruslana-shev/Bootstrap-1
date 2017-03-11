@@ -232,7 +232,7 @@
 // the nav the full height of the horizontal nav (above 768px).
 
 .navbar-nav {
-  margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
+  margin: 0 (-$navbar-padding-horizontal); // ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
 
   > li > a {
     padding-top:    10px;
@@ -241,7 +241,7 @@
     font-size: $navbar-default-link-font-size;
     font-family: $navbar-default-link-font-family;
     border-top: $navbar-default-link-border-width solid transparent;
-    padding-left: 0;
+    padding-left: 16px;
     padding-right: 0;
   }
 
